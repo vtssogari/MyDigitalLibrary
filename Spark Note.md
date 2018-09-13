@@ -25,4 +25,4 @@ spark.sql.thriftServer.incrementalCollect=false|true
 
 ### register UDF, UADF
 
-CREATE TEMPORARY FUNCTION myFunnyUpper AS 'org.hue.udf.MyUpper'
+CREATE TEMPORARY FUNCTION RankPercentile AS 'org.hue.udf.MyUpper'
