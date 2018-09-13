@@ -26,3 +26,7 @@ spark.sql.thriftServer.incrementalCollect=false|true
 ### register UDF, UADF
 
 CREATE TEMPORARY FUNCTION RankPercentile AS 'org.hue.udf.MyUpper'
+
+
+Use the SHOW FUNCTIONS command to confirm taht your UDF has been registered properly.
+
