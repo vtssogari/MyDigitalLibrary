@@ -22,3 +22,7 @@ spark.sql.thriftServer.incrementalCollect=false|true
   --conf spark.sql.hive.thriftServer.singleSession=true
   
 ```
+
+### register UDF, UADF
+
+CREATE TEMPORARY FUNCTION myFunnyUpper AS 'org.hue.udf.MyUpper'
