@@ -20,6 +20,7 @@ spark.sql.thriftServer.incrementalCollect=false|true
   --master <master-uri>
   --conf spark.sql.thriftServer.incrementalCollect=true
   --conf spark.sql.hive.thriftServer.singleSession=true
+  --jars ../custom.jar,custom2.jar
   
 ```
 
