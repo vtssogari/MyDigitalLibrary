@@ -20,6 +20,7 @@ spark.sql.thriftServer.incrementalCollect=false|true
   --master <master-uri>
   --conf spark.sql.thriftServer.incrementalCollect=true
   --conf spark.sql.hive.thriftServer.singleSession=true
+  --
   --jars ../custom.jar,custom2.jar
   
 ```
@@ -30,4 +31,19 @@ CREATE TEMPORARY FUNCTION RankPercentile AS 'org.hue.udf.MyUpper'
 
 
 Use the SHOW FUNCTIONS command to confirm taht your UDF has been registered properly.
+
+
+### Beeline client testing
+
+
+[sparkhome]/bin/beeline 
+
+
+!connect jdbc:hive2://localhost:10000
+
+show database;
+
+show tables;
+
+
 
