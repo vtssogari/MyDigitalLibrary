@@ -43,7 +43,10 @@ Use the SHOW FUNCTIONS command to confirm taht your UDF has been registered prop
 
 show database;
 
+use dbname;
+
 show tables;
 
+select * from tablename;
 
 
